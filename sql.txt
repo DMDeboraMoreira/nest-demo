@@ -1,0 +1,15 @@
+\l
+\c demo_nest
+\dt
+SELECT * FROM users;  (para ver registros)
+DELETE FROM users;
+
+
+-- ver los registros (opcional)
+SELECT * FROM users;
+
+-- eliminar todos los registros
+DELETE FROM users;
+
+-- o más eficiente (deja la tabla vacía y reinicia contadores si usás ID numérico)
+TRUNCATE TABLE users RESTART IDENTITY CASCADE;
